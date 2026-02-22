@@ -1,38 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bodhi Legal</title>
+
 <style>
+@font-face {
+    font-family: 'Roblox121';
+    src: url('./fonts/Roblox121-Regular.ttf') format('truetype');
+}
+
 body {
-    background:#0f0f0f;
-    color:white;
-    font-family:Segoe UI, Roboto, sans-serif;
-    text-align:center;
-    padding-top:120px;
+    margin: 0;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
+
 h1 {
-    color:#ff4c00;
-    font-size:48px;
+    font-family: 'Roblox121', 'Arial Black', sans-serif;
+    font-size: 72px;
+    color: #ff4c00;
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 76, 0, 0.6);
 }
-a {
-    display:block;
-    margin:20px;
-    font-size:20px;
-    color:#ff4c00;
-    text-decoration:none;
+
+.button {
+    display: inline-block;
+    padding: 14px 40px;
+    margin: 15px;
+    border: 2px solid #ff4c00;
+    color: #ff4c00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
 }
-a:hover {
-    text-decoration:underline;
+
+.button:hover {
+    background-color: #ff4c00;
+    color: #0f0f0f;
+    box-shadow: 0 0 20px rgba(255, 76, 0, 0.7);
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    color: #777;
 }
 </style>
 </head>
+
 <body>
 
 <h1>BODHI</h1>
 
-<a href="terms.html">Terms of Service</a>
-<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html" class="button">Terms of Service</a>
+<a href="privacy.html" class="button">Privacy Policy</a>
+
+<div class="footer">
+© 2026 Bodhi
+</div>
 
 </body>
 </html>
